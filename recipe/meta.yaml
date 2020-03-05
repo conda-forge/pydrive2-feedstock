@@ -1,5 +1,5 @@
 {% set name = "PyDrive2" %}
-{% set version = "1.4.5" %}
+{% set version = "1.4.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa65c34a95dd622af979ae45e7d31cfd945cdb61e7b7bd91119f01b127d00cf4
+  sha256: be524cd4931dcf6fa6f856112b9f319ee11781d153d74131a95183b4a4f91dbc
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -40,8 +40,7 @@ about:
   license_family: Apache
   license_file: LICENSE
   summary: >
-    Google Drive API Python wrapper library.
-    Actively maintained fork of PyDrive.
+    Google Drive API Python wrapper library. Actively maintained fork of PyDrive.
   doc_url: https://gsuitedevs.github.io/PyDrive/docs/build/html/index.html
   dev_url: https://github.com/iterative/PyDrive2
 
