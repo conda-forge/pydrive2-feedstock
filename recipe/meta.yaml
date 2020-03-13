@@ -20,10 +20,9 @@ requirements:
     - pip
   run:
     - python
-    - google-api-python-client >=1.2
+    - google-api-python-client >=1.7.12
     - oauth2client >=4.0.0
     - pyyaml >=3.0
-    - httplib2 <=0.15.0
     - pyOpenSSL >=19.1.0
 
 test:
