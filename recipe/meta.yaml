@@ -1,5 +1,5 @@
 {% set name = "PyDrive2" %}
-{% set version = "1.4.7" %}
+{% set version = "1.4.8" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 9cc010b20057e920dab83a8d3701632aa15b2a5c33c21768e4291c92c2f74e9a
+  sha256: 4d1b07dfc9f1cf3d61cc719123f80364e2955c57b988f7508695997e5eb84c84
 
 build:
   noarch: python
