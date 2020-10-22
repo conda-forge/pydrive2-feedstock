@@ -20,7 +20,7 @@ requirements:
     - pip
   run:
     - python
-    - google-api-python-client >=1.12.1
+    - google-api-python-client >=1.12.5
     - six >=1.13.0
     - oauth2client >=4.0.0
     - pyyaml >=3.0
