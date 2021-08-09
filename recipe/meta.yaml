@@ -25,6 +25,8 @@ requirements:
     - oauth2client >=4.0.0
     - pyyaml >=3.0
     - pyOpenSSL >=19.1.0
+    - fsspec ==2021.7.0
+    - tqdm >= 4.0.0  # for [fsspec]
 
 test:
   imports:
@@ -33,6 +35,7 @@ test:
     - pydrive2.drive
     - pydrive2.files
     - pydrive2.settings
+    - pydrive2.fs
 
 about:
   home: https://github.com/iterative/PyDrive2
