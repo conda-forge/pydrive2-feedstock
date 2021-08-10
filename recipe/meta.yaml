@@ -1,5 +1,5 @@
 {% set name = "PyDrive2" %}
-{% set version = "1.8.3" %}
+{% set version = "1.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: d2217ba2feabcd13c97269b7e83ac975e33c1110bc2f4bd7d36b3e74349c011d
+  sha256: a24f21793720d34d5c2d9806351613a475bc8f05f8303629f16e928dc6d98593
 
 build:
   noarch: python
@@ -25,6 +25,9 @@ requirements:
     - oauth2client >=4.0.0
     - pyyaml >=3.0
     - pyOpenSSL >=19.1.0
+    - fsspec ==2021.7.0
+    - tqdm >=4.0.0  # for fsspec
+    - funcy  # for fsspec
 
 test:
   imports:
@@ -33,10 +36,11 @@ test:
     - pydrive2.drive
     - pydrive2.files
     - pydrive2.settings
+    - pydrive2.fs
 
 about:
   home: https://github.com/iterative/PyDrive2
-  license: Apache 2.0
+  license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
   summary: >
