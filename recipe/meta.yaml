@@ -28,6 +28,7 @@ requirements:
     - fsspec >=2021.7.0
     - tqdm >=4.0.0  # for fsspec
     - funcy  # for fsspec
+    - appdirs >=1.4.3  # for fsspec
 
 test:
   imports:
