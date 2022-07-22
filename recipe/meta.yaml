@@ -1,5 +1,5 @@
 {% set name = "PyDrive2" %}
-{% set version = "1.13.0" %}
+{% set version = "1.14.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 87a417ef9bd38db9520b8409073cd11edc4fb42ea2d7b07c14991f34f2fdd4a9
+  sha256: db5da3be671630f571ca7100b281d8b5d72fd078acd425247a6d292e2b3d2840
 
 build:
   noarch: python
@@ -18,6 +18,7 @@ requirements:
   host:
     - python >=3.6
     - pip
+    - setuptools_scm >=6.3.1
   run:
     - python >=3.6
     - google-api-python-client >=1.12.5
