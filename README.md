@@ -1,11 +1,11 @@
-About pydrive2
-==============
+About pydrive2-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydrive2-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/iterative/PyDrive2
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pydrive2-feedstock/blob/main/LICENSE.txt)
 
 Summary: Google Drive API Python wrapper library. Actively maintained fork of PyDrive.
 
